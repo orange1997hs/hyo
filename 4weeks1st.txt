@@ -1,0 +1,9 @@
+infile= open("d:\\HumptyDumpty.txt","r")
+m=0
+for line in infile:
+    line=line.rstrip()
+    word_list=line.split()
+    for word in word_list:
+        m+=1
+infile.close()
+print("이 파일에 있는 문자수는 %d단어 입니다." %m)
